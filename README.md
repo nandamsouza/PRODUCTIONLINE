@@ -66,7 +66,7 @@ npm run start
 ou
 
 ```bash
-yarn dev
+yarn start
 ```
 
 ###### Acesse a aplicação:
