@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.swal2-container {
+  z-index: 9999;
+}
+.custom-swal-container {
+  width: auto !important; /* Defina a largura padrão como automática */
+}
+.custom-swal-container.large-email {
+  width: 400px !important;
+  word-break: break-word;
+  white-space: normal;
+}
+@media (max-width: 576px) {
+  .custom-swal-container {
+    width: 100% !important; /* Faça o Swal ocupar 100% da largura */
+  }
+  .custom-swal-container.large-email {
+    width: 100% !important;
+  }
+}
+.custom-progress-bar {
+  height: 5px; /* Altura da barra de progresso */
+}
+
+.icon-success .swal2-timer-progress-bar {
+  background-color: #a5dc86 !important;
+}
+
+.icon-error .swal2-timer-progress-bar {
+  background-color: #f27474 !important;
+}
+
+.icon-warning .swal2-timer-progress-bar {
+  background-color: #f8bb86 !important;
+}
+
+.icon-info .swal2-timer-progress-bar {
+  background-color: #3fc3ee !important;
+}

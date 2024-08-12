@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  frontend-ui:
+    container_name: frontend-ui
+    build:
+      context: .
+      args:
+        PORT: ${FRONTEND_PORT}
+    restart: always
+    env_file: .env
+    ports:
+      - ${FRONTEND_EXTERNAL_PORT}:${FRONTEND_PORT}
+    networks:
+      - api-network
+
+networks:
+  api-network:
+    driver: bridge
